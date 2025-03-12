@@ -3,185 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTMLTASKS</title>
+    <title>HTML TASKS</title>
     <style>
-        body{
+        body {
             background-color: lightblue;
-        }
-        
-        div{
+            display: flex;
+            flex-direction: column;
             align-items: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-decoration: underline;
+            margin: 20px 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: rgb(239, 229, 229);
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
             text-align: center;
+            height: 250px;
+        }
 
+        h2, h3, p {
+            margin: 0.5em 0;
         }
-        .table{
-            display: table;
-            border-collapse: collapse;
-            width: 100%;
-        }
-        .row{
-            display: table-row;
-            
-        }
-        .cell{
-            display: table-cell;
-            padding: 5px;
-            
-        }
-        .table2{
-            width: 200px;
-      margin: 50px auto;
-      padding: 20px;
-      border: 1px solid #ddd;
-      background-color: rgb(239, 229, 229);
-      border-radius: 8px;
-      height: 250px;
-        }
-        h2,h3,p{
-            margin: 0.5em;
-        }
-        .anchor-click{
-            
-            width: 50%;
-      margin: 50px auto;
-      padding: 20px;
-      border: 1px solid #ddd;
-      background-color: rgb(221, 156, 156);
-      border-radius: 8px;
-      height: 1px;
-        }
-        a:link {
-  color: black;
-  text-decoration: none;
-}
-a:visited,a:hover,a:active {
-  color: black;
-}
-a:hover{
-    background-color: rgb(226, 197, 186);
 
-    
-}
+        .anchor-click {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: rgb(221, 156, 156);
+            border-radius: 8px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .anchor-click:hover {
+            background-color: rgb(226, 197, 186);
+        }
     </style>
 </head>
 <body>
-    <div>
-        <h1><u>HTML TASKS</u></h1>
-        <div class="table">
-            <div class="row">
-                <div class="cell">
-                    <div class="table2">
-                        <h2>DAY1 </h2>
-                        <h3>20/12/2024</h3>
-                        <p><b>TASK:</b>Write code using heading tag</p><br><br><br><br>
-                        <a class="anchor-click" target="_blank" href="day2/day2.html">Click Me!</a>
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="table2">
-                        <h2>DAY2 </h2>
-                        <h3>21/12/2024</h3>
-                        <p><b>TASK:</b>Write different types of frontend and backend technologies using heading and paragraph tags .</p>
-                     <br><br>
-                        <a class="anchor-click" target="_blank" href="day1/day1.html">Click Me!</a>
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="table2">
-                        <h2>DAY3 </h2>
-                        <h3>23/12/2024</h3>
-                        <p><b>TASK:</b>Create HTML Wikipedia including links using anchor tag
-                        </p><br><br><br>
-                        <a class="anchor-click" target="_blank" href="day3/day3.html">Click Me!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="cell">
-                    <div class="table2">
-                        <h2>DAY4 </h2>
-                        <h3>24/12/2024</h3>
-                        <p><b>TASK:</b>Web page of vs code and it's features, emmets symbol and description table, shortcuts of keyboard and description table.
-                        </p><br>
-                        <a class="anchor-click" target="_blank" href="day4/day4.html">Click Me!</a>
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="table2">
-                        <h2>DAY5 </h2>
-                        <h3>27/12/2024</h3>
-                        <p><b>TASK:</b>Frontend, backend, mean, mern technology using images</p>
-                     <br><br><br>
-                        <a class="anchor-click" target="_blank" href="day5/day5.html">Click Me!</a>
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="table2">
-                        <h2>DAY6 </h2>
-                        <h3>30/12/2024</h3>
-                        <p><b>TASK:</b>Building resume using forms tags</p>
-                        <br><br><br><br>
-                        <a class="anchor-click" target="_blank" href="day6/day6.html">Click Me!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="cell"><div class="table2">
-                    <h2>DAY7 </h2>
-                    <h3>31/12/2024</h3>
-                    <p><b>TASK:</b>Restaurant menu page using details,summary and iframes
-                    </p><br><br><br>
-                    <a class="anchor-click" target="_blank" href="day7/day7anchor.html">Click Me!</a>
-                </div>
-            </div>
-                <div class="cell">
-                    <div class="table2">
-                        <h2>DAY8 </h2>
-                        <h3>02/01/2025</h3>
-                        <p><b>TASK:</b>Create webpage using all the previous classes
-                        </p><br><br><br>
-                        <a class="anchor-click" target="_blank" href="day8webpage/day8.html">Click Me!</a>
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="table2">
-                      <h2>DAY9</h2>
-                      <h3>03/01/2025</h3>
-                      <p><b>TASK:</b>Create a registration form using all input types.</p>
-                      <br><br><br><br>
-                      <a class="anchor-click" target="_blank" href="day9registration_form/day9.html">Click Me!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="cell">
-                    <div class="table2">
-                        <h2>DAY10</h2>
-                        <h3>06/01/2025</h3>
-                        <p><b>TASK:</b>Create a login form. When you click the submit button you need to get the details of the user. 
-                        </p><br><br>
-                        <a class="anchor-click" target="_blank" href="day10loginform/day1o.html">Click Me!</a>
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="table2">
-                    <h2>DAY11</h2>
-                    <h3>07/01/2025</h3>
-                    <p><b>TASK:</b>Sign up, login, forget password login forms linked with each other
-                    </p><br><br><br>
-                    <a class="anchor-click" target="_blank" href="day11signin/day11.html">Click Me!</a>
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="table2">
-                    <h2>DAY12</h2>
-                    <h3>08/01/2025</h3>
-                    <p><b>TASK:</b>deploy any code in git and send the screenshot of git after pushing the files</p>
-                    <br><br><br>
-                    <a class="anchor-click" target="_blank" href="day12deploy/day12.html">Click Me!</a>
-                    </div>
-                </div>
-            </div>
+    <h1>HTML TASKS</h1>
+    <div class="container">
+        <div class="card">
+            <h2>DAY1</h2>
+            <h3>20/12/2024</h3>
+            <p><b>TASK:</b> Write code using heading tag</p>
+            <a class="anchor-click" target="_blank" href="day2/day2.html">Click Me!</a>
+        </div>
+        <div class="card">
+            <h2>DAY2</h2>
+            <h3>21/12/2024</h3>
+            <p><b>TASK:</b> Write different types of frontend and backend technologies using heading and paragraph tags.</p>
+            <a class="anchor-click" target="_blank" href="day1/day1.html">Click Me!</a>
+        </div>
+        <div class="card">
+            <h2>DAY3</h2>
+            <h3>23/12/2024</h3>
+            <p><b>TASK:</b> Create HTML Wikipedia including links using anchor tag</p>
+            <a class="anchor-click" target="_blank" href="day3/day3.html">Click Me!</a>
+        </div>
+        <div class="card">
+            <h2>DAY4</h2>
+            <h3>24/12/2024</h3>
+            <p><b>TASK:</b> Web page of VS Code and its features, emmets symbol and description table, shortcuts of keyboard and description table.</p>
+            <a class="anchor-click" target="_blank" href="day4/day4.html">Click Me!</a>
+        </div>
+        <div class="card">
+            <h2>DAY5</h2>
+            <h3>27/12/2024</h3>
+            <p><b>TASK:</b> Frontend, backend, mean, mern technology using images</p>
+            <a class="anchor-click" target="_blank" href="day5/day5.html">Click Me!</a>
+        </div>
+        <div class="card">
+            <h2>DAY6</h2>
+            <h3>30/12/2024</h3>
+            <p><b>TASK:</b> Building resume using forms tags</p>
+            <a class="anchor-click" target="_blank" href="day6/day6.html">Click Me!</a>
+        </div>
+        <div class="card">
+            <h2>DAY7</h2>
+            <h3>31/12/2024</h3>
+            <p><b>TASK:</b> Restaurant menu page using details, summary and iframes</p>
+            <a class="anchor-click" target="_blank" href="day7/day7anchor.html">Click Me!</a>
+        </div>
+        <div class="card">
+            <h2>DAY8</h2>
+            <h3>02/01/2025</h3>
+            <p><b>TASK:</b> Create webpage using all the previous classes</p>
+            <a class="anchor-click" target="_blank" href="day8webpage/day8.html">Click Me!</a>
+        </div>
+        <div class="card">
+            <h2>DAY9</h2>
+            <h3>03/01/2025</h3>
+            <p><b>TASK:</b> Create a registration form using all input types.</p>
+            <a class="anchor-click" target="_blank" href="day9registration_form/day9.html">Click Me!</a>
+        </div>
+        <div class="card">
+            <h2>DAY10</h2>
+            <h3>06/01/2025</h3>
+            <p><b>TASK:</b> Create a login form. When you click the submit button you need to get the details of the user.</p>
+            <a class="anchor-click" target="_blank" href="day10loginform/day10.html">Click Me!</a>
+        </div>
+        <div class="card">
+            <h2>DAY11</h2>
+            <h3>07/01/2025</h3>
+            <p><b>TASK:</b> Sign up, login, forget password login forms linked with each other</p>
+            <a class="anchor-click" target="_blank" href="day11signin/day11.html">Click Me!</a>
+        </div>
+        <div class="card">
+            <h2>DAY12</h2>
+            <h3>08/01/2025</h3>
+            <p><b>TASK:</b> Deploy any code in git and send the screenshot of git after pushing the files</p>
+            <a class="anchor-click" target="_blank" href="day12deploy/day12.html">Click Me!</a>
         </div>
     </div>
 </body>
